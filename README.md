@@ -1,6 +1,7 @@
 # iTech
 Twitter API test for ITech
 
+
 Once cloned run:
 
 - composer install
@@ -17,4 +18,3 @@ Brief description
 - If no new tweet is found will alert the user
 
 - if a new tweet is found will refresh the widget.
-
