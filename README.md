@@ -6,6 +6,7 @@ Once cloned run:
 
 - composer install
 - mv .env.example .env
+- to run out of box, web server will need to point to: [your-path]/master/public
 
 The app won't run if he .env file is not present.
 
@@ -19,4 +20,6 @@ Brief description
 
 - If no new tweet is found will alert the user
 
-- if a new tweet is found will refresh the widget.
+- If a new tweet is found will refresh the widget.
+
+- No database is used.
