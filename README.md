@@ -5,7 +5,9 @@ Twitter API test for ITech
 Once cloned run:
 
 - composer install
-- No database is used.
+- mv .env.example .env
+
+The app won't run if he .env file is not present.
 
 Brief description
 
