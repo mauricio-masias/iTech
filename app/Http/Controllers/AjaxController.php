@@ -22,11 +22,16 @@ class AjaxController extends Controller
         $this->client = new GetUserTimelineFeed($handle);
         
         /*
-        *  Pull 1 Tweets and compact the array when passing into the view
+        *  Pull 1 Tweet and compact the array when passing into the view
         */
         $this->client->tweets_limit = 1;
         $tweets = $this->client->getFeed();
 
+        /*
+        * Compare the last tweet ID with the API last Tweet.
+        * If ID same then let user know
+        * IF ID different, refresh the widget to load the new tweet
+        */
         if($tweets[0]['id'] == $id){
             //no change
             $status = 'no-change';
