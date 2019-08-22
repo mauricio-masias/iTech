@@ -1,5 +1,5 @@
 # iTech
-Twitter API test for ITech
+Twitter API for ITech
 
 
 Once cloned run:
